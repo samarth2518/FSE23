@@ -1,15 +1,27 @@
-name: My first workflow
-on: pull_request
+# name: My first workflow
+# on: pull_request
+# jobs:
+#   say-hello:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Print message
+#         run: echo "Hello, github Actions!"
+#         name: Print message again
+#         run: echo "Samarth Gupta"
+#   say-bye:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Print message
+#         run: echo "bye from 2nd job"  
+
+name: User actions
+on: push
 jobs:
-  say-hello:
+  test:
     runs-on: ubuntu-latest
     steps:
-      - name: Print message
-        run: echo "Hello, github Actions!"
-        name: Print message again
-        run: echo "Samarth Gupta"
-  say-bye:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Print message
-        run: echo "bye from 2nd job"  
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: list file
+        run: ls
