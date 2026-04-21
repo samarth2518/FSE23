@@ -1,0 +1,26 @@
+{
+  "name": "fse23",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo test successfull"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samarth2518/FSE23.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/samarth2518/FSE23/issues"
+  },
+  "homepage": "https://github.com/samarth2518/FSE23#readme",
+  "dependencies": {
+    "body-parser": "^2.2.2",
+    "eslint": "^10.2.1",
+    "express": "^5.2.1"
+  }
+}
