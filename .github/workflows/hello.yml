@@ -35,3 +35,10 @@ jobs:
 
       - name : list file
         run : ls
+
+  deploy:
+    needs: test
+    runs-on : ubuntu-latest
+    steps:
+      - name : Deploy lun
+        run : echo "deploy hogya betichor"
